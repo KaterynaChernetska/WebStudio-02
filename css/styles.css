@@ -27,10 +27,8 @@
 .list {
     list-style: none;
 }
-button,
-a {
+button {
     font-family: inherit;
-    font-style: normal;
 }
 /* стилізація хедеру */
 
@@ -191,9 +189,11 @@ color: var(--accent-color);
 
 .address-link {
     color: rgba(255, 255, 255, 0.6);
+    
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+    font-style: normal;
 }
 
 .actual-address {
@@ -203,6 +203,7 @@ color: var(--accent-color);
     line-height: 1.71;
 
     text-decoration: none;
+    font-style: normal;
     
 }
 
