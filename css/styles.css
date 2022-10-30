@@ -5,6 +5,9 @@
     --primary-white-color:#FFFFFF;
     --background-dark-color: #2F303A;
     --background-grey-color:#F5F4FA;
+    --black-color:#000000;
+    --footer--link: rgba(255, 255, 255, 0.6);
+    --main-button-active: #188CE8;
 }
 /* синій #2196F3  */
 /* білий  #FFFFFF */
@@ -21,8 +24,6 @@
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.71;
-
   
 }
 
@@ -47,7 +48,7 @@ button {
     }
 
 .logo-studio {
-    color: #000000;
+    color:var(--black-color);
     
 }
 
@@ -86,9 +87,9 @@ color: var(--accent-color);
 /* секція герой */
 .hero {
     background:var(--background-dark-color);
-    
 
 }
+
 .hero-title {    
     color: var(--primary-white-color);
 
@@ -107,8 +108,8 @@ color: var(--accent-color);
 }
 
 .button.primary {
-    background-color: var(--background-grey-color);
-    color: var(--title-text-color);
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
     
    
     font-weight: 700;
@@ -118,13 +119,9 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
 }
 
-
-
 .button.primary:hover,
-.button.secondary:hover,
-.button.primary:focus,
-.button.secondary:focus {
-    background-color: var(--accent-color);
+.button.primary:focus {
+    background-color: var(--main-button-active);
     color: var(--primary-white-color);
     cursor: pointer;
 }
@@ -138,6 +135,9 @@ color: var(--accent-color);
     line-height: 1.14;
     text-transform: uppercase;
 
+}
+.principles p {
+    line-height: 1.71;
 }
 
 /* заголовки секцій */
@@ -186,10 +186,11 @@ color: var(--accent-color);
 }
 
 .address-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer--link);
 
     text-decoration: none;
     font-style: normal;
+    line-height: 1.5;
 }
 
 .actual-address {
@@ -197,6 +198,7 @@ color: var(--accent-color);
 
     text-decoration: none;
     font-style: normal;    
+    line-height: 1.5;
 }
 
 .actual-address:hover,
@@ -214,6 +216,12 @@ color: var(--accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+}
+.button.secondary:hover
+.button.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
 }
 .projects a {
     text-decoration: none;
@@ -235,4 +243,3 @@ color: var(--accent-color);
     line-height: 1.87;
 
 }
-
