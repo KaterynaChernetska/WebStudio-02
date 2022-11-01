@@ -17,6 +17,8 @@
 /* колір фону 2  #2F303A; */
 /* колір фону 3 #F5F5F5 */
 /* колір фону 4  #F5F4FA */
+
+
 .body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -25,16 +27,23 @@
     letter-spacing: 0.03em;
     font-size: 14px;
   
-}
+} 
 
 /* Скинути крапочки в ул */
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 button {
     font-family: inherit;
 }
 /* стилізація хедеру */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
 
 /* стилізація логотипу */
 .logo {
@@ -87,24 +96,30 @@ color: var(--accent-color);
 /* секція герой */
 .hero {
     background:var(--background-dark-color);
+    text-align: center;
 
 }
 
 .hero-title {    
-    color: var(--primary-white-color);
+    color: var(--primary-white-color);   
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 40;
+
+    
    
 }
 /* кнопка */
 .button {
     background-color: var(--background-grey-color);
     color: var(--title-text-color);
+    border: none;
 }
 
 .button.primary {
@@ -114,9 +129,15 @@ color: var(--accent-color);
    
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.85;
+    line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    min-width: 216px;
+    margin-bottom: 200px;
 }
 
 .button.primary:hover,
@@ -127,6 +148,9 @@ color: var(--accent-color);
 }
 
 /* секція наші принципи */
+.title-to-delete {
+    margin: 0;
+}
 .principles .title {
     color: var(--title-text-color);
 
@@ -134,10 +158,19 @@ color: var(--accent-color);
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 
 }
 .principles p {
     line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* заголовки секцій */
@@ -148,11 +181,23 @@ color: var(--accent-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-top: 0;
     
 }
+
+/* секція чим ми займаємося */
+
+
+
 /* секція наша команда */
-.section-team {
+.team {
     background-color: var(--background-grey-color);
+}
+
+.team {
+padding-top: 94px;
+padding-bottom: 50px;
 }
 .team-list .title {
     color: var(--title-text-color);
@@ -160,11 +205,16 @@ color: var(--accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 .team-list p {
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /* підвал сайту */
  .footer {
@@ -212,16 +262,28 @@ color: var(--accent-color);
 .button.secondary {
     background-color: var(--background-grey-color);
     color: var(--title-text-color);
-
+    
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;;
+
+   
+    
 }
 .button.secondary:hover,
 .button.secondary:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 .projects a {
     text-decoration: none;
